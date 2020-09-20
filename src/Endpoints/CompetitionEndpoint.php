@@ -25,7 +25,7 @@ class CompetitionEndpoint extends AbstractEndpoint
     {
         $data = $this->queryEndpoint(
             array_merge($this->verifyParameters($parameters), [
-                'reeks' => 'reserve',
+                'Wedstrijd' => 'Reserve',
             ])
         );
 
@@ -35,9 +35,7 @@ class CompetitionEndpoint extends AbstractEndpoint
     protected function verifyParameters(array $parameters)
     {
         return ParameterBuilder::verify($parameters, [
-            'province_id' => new Constraints\Optional([
-                new Constraints\Type('int'),
-            ]),
+            'province_id' => new Constraints\Type('int'),
             'reeks'       => new Constraints\Type('string'),
         ]);
     }
