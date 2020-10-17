@@ -39,6 +39,7 @@ class Calendar extends AbstractEntity
         'stnr_home'              => 'home_team_number',
         'match_visitors_team_id' => 'visitors_team_id',
         'stnr_visitors'          => 'visitors_team_number',
+        'postponed'              => 'postponed',
     ];
 
     protected $casts = [
@@ -50,5 +51,6 @@ class Calendar extends AbstractEntity
         'ForfaitRes'             => BooleanCast::class,
         'match_home_team_id'     => IntegerCast::class,
         'match_visitors_team_id' => IntegerCast::class,
+        'postponed'              => BooleanCast::class,
     ];
 }
