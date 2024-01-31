@@ -1,5 +1,10 @@
 # Release Notes
 
+## [v0.3.0 (2024-01-31)](https://github.com/ThomasDeMarez/volleyscores/compare/v0.2.1...v0.3.0)
+
+- Bump PHP requirement to ^8.0.2
+- Bump Laravel packages to Laravel 10
+
 ## [v0.2.1 (2020-10-17)](https://github.com/ThomasDeMarez/volleyscores/compare/v0.2.0...v0.2.1)
 
 ### Added
