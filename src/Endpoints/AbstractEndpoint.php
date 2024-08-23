@@ -50,7 +50,7 @@ abstract class AbstractEndpoint
             ]);
         }
 
-        $responses = Promise\unwrap($promises);
+        $responses = Promise\Utils::unwrap($promises);
 
         foreach($responses as $response) {
             $data = array_merge($data, json_decode($response->getBody(), true));
